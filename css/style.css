@@ -570,7 +570,7 @@ ul {
   background-position: center top;
 }
 .bg7 {
-  background-image: url(images/bg/bg3.jpg);
+  background-image: url(https://jssaten.ac.in/images/Index_Slide/NCSES-2.jpg);
   background-size: cover;
   background-position: center;
   background-position: center top;
@@ -1044,7 +1044,13 @@ ul {
   padding: 25px 0 20px;
 }
 .rs-header .logo-area {
-  width: 20%;
+  width: 20%!important;
+}
+@media(max-width:768px) {
+  .rs-header .logo-area { 
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .rs-header .rs-header-top .header-contact {
   float: right;
@@ -1180,6 +1186,12 @@ ul {
 }
 .home2 .rs-header-top {
   padding: 20px 0 50px;
+}
+@media(max-width:768px) {
+  .home2 .rs-header-top {
+    padding: 10px 0 10px;
+    
+  }
 }
 .home2 .menu-area .container {
   position: relative;
