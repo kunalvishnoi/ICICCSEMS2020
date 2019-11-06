@@ -7136,3 +7136,13 @@ ul {
     color: #ff3115;
   }
 }
+
+.new_nav {
+  display: flex;
+  justify-content: center
+}
+@media(max-width: 768px) {
+  .new_nav {
+    display: block;
+  }
+}

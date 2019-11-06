@@ -238,10 +238,10 @@ Version: 1.0.0
  }
  
  .home2 .rs-menu > ul > li:first-child > a{
-     padding-left: 40px;
+     padding-left: 25px;
  }
  .home2 .rs-menu > ul > li{
-     padding-right: 40px;
+     padding-right: 25px;
  }
  .home2 .rs-menu > ul > li > a {
      padding: 0px;
