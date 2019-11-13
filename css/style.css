@@ -1044,7 +1044,7 @@ ul {
   padding: 25px 0 20px;
 }
 .rs-header .logo-area {
-  width: 20%!important;
+  /* width: 20%!important; */
 }
 @media(max-width:768px) {
   .rs-header .logo-area { 
@@ -7141,8 +7141,15 @@ ul {
   display: flex;
   justify-content: center
 }
+.change-nav {
+  display: flex;
+  align-items: center;
+}
 @media(max-width: 768px) {
   .new_nav {
     display: block;
+  }
+  .change-nav {
+    justify-content: center;
   }
 }
