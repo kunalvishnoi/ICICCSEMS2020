@@ -7504,6 +7504,9 @@ ul.list-unstyled.mb-5.position-relative {
 .head-data {
   font-size: 20px;
 }
+.head-data2 {
+  font-size: 22px;
+}
 
 @media(max-width: 768px) {
   .head-top-new {
@@ -7513,5 +7516,8 @@ ul.list-unstyled.mb-5.position-relative {
     font-size: 14px;
     padding-left: 3px;
     padding-right: 3px;
+  }
+  .head-data2 {
+    font-size: 16px;
   }
 }
