@@ -47,7 +47,13 @@
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%; }
+    width: 100%;
+  height: calc(100vh - 90px); }
+  @media(max-width:768px) {
+    .owl-carousel .owl-item img {
+      height: 50vh;
+    }
+  }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
