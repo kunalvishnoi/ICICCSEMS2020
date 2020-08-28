@@ -1,50 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
-    <head>
-        <!-- meta tag -->
-        <meta charset="utf-8">
-        <title>ICCSEM-2020</title>
-        <meta name="description" content="">
-        <!-- responsive tag -->
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- favicon -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
-        <!-- bootstrap v4 css -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <!-- font-awesome css -->
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <!-- animate css -->
-        <script src="https://use.fontawesome.com/39bfecc392.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
-        <!-- owl.carousel css -->
-        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<head>
+		<!-- meta tag -->
+		<meta charset="utf-8" />
+		<title>ICCSEM-2020</title>
+		<meta name="description" content="" />
+		<!-- responsive tag -->
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- favicon -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/fav.png" />
+		<!-- bootstrap v4 css -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<!-- font-awesome css -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<!-- animate css -->
+		<script src="https://use.fontawesome.com/39bfecc392.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<!-- owl.carousel css -->
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
 		<!-- slick css -->
-        <link rel="stylesheet" type="text/css" href="css/slick.css">
-        <!-- rsmenu CSS -->
-        <link rel="stylesheet" type="text/css" href="css/rsmenu-main.css">
-        <!-- rsmenu transitions CSS -->
-        <link rel="stylesheet" type="text/css" href="css/rsmenu-transitions.css">
-        <!-- magnific popup css -->
-        <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="css/slick.css" />
+		<!-- rsmenu CSS -->
+		<link rel="stylesheet" type="text/css" href="css/rsmenu-main.css" />
+		<!-- rsmenu transitions CSS -->
+		<link rel="stylesheet" type="text/css" href="css/rsmenu-transitions.css" />
+		<!-- magnific popup css -->
+		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 		<!-- flaticon css  -->
-        <link rel="stylesheet" type="text/css" href="fonts/flaticon.css">
-        <!-- flaticon2 css  -->
-        <link rel="stylesheet" type="text/css" href="fonts/fonts2/flaticon.css">
-        <!-- style css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- responsive css -->
-        <link rel="stylesheet" type="text/css" href="css/responsive.css">
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body class="home2">
-        <!--Preloader area start here-->
-        <!-- <div class="book_preload">
+		<link rel="stylesheet" type="text/css" href="fonts/flaticon.css" />
+		<!-- flaticon2 css  -->
+		<link rel="stylesheet" type="text/css" href="fonts/fonts2/flaticon.css" />
+		<!-- style css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- responsive css -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- Modal Styles -->
+		<style>
+			.modal-backdrop {
+				opacity: 0.3 !important;
+			}
+			.modal::-webkit-scrollbar {
+				display: none;
+			}
+			.modal-body {
+				display: flex;
+				/* background-image: url("images/modal.jpg"); */
+				background-color: rgba(211, 84, 0, 0.3);
+			}
+			.modal-header {
+				background-color: rgba(211, 84, 0, 0.3);
+				border: 0 !important;
+			}
+			.modal-header button:focus {
+				outline: none;
+			}
+			.content {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				text-align: center;
+			}
+			h4 {
+				line-height: 10px;
+			}
+			@media (max-width: 990px) {
+				.modal-body img {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body class="home2">
+		<!--Preloader area start here-->
+		<!-- <div class="book_preload">
             <div class="book">
                 <div class="book__page"></div>
                 <div class="book__page"></div>
@@ -52,468 +94,592 @@
             </div>
         </div> -->
 		<!--Preloader area end here-->
-		
-        <!--Full width header Start-->
-		<div class="full-width-header" style="position: relative;">
 
-						<!-- Toolbar Start --> 
-			<div class="rs-toolbar d-none d-md-block">
-				<div class="container-fluid white-text">
-					<marquee scrollamount="10"><p class="text-white m-0"><b><span style="color: #ff3115;">New - </span> Registration is now open</b></p></marquee>
+		<!-- Modal Starts -->
+		<div class="modal fade" tabindex="-1" id="myModal">
+			<div class="modal-dialog modal-dialog-centered" style="max-width: 1140px">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h5 class="modal-title">Modal title</h5> -->
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img src="images/modal-img.png" alt="" style="height: 500px" />
+						<section class="content">
+							<h4 style="line-height: 25px; text-align: center">
+								ONLINE INTERNATIONAL CONFERENCE ON INTELLIGENT CONTROL AND COMPUTATION FOR
+								SMART ENERGY AND MECHATRONIC SYSTEMS (ICCSEMS-2020)
+							</h4>
+							<h5>(25-26 September 2020)</h5>
+							<h5>Organized by</h5>
+							<h2>JSS ACADEMY OF TECHNICAL EDUCATION</h2>
+							<h2 style="line-height: 10px">NOIDA</h2>
+							<h3>In Commemoration of</h3>
+							<h2>105<sup>th</sup> Jayanthi Celebrations of</h2>
+							<h4>Srimanmaharaja Rajagurutilaka</h4>
+							<h4>His Holiness Jagadguru Dr. Sri Sri Shivarathri</h4>
+							<h4>Rajendra Mahaswamiji</h4>
+						</section>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
 				</div>
 			</div>
-			
+		</div>
+		<!-- Modal Ends -->
+
+		<!--Full width header Start-->
+		<div class="full-width-header" style="position: relative">
+			<!-- Toolbar Start -->
+			<div class="rs-toolbar d-none d-md-block">
+				<div class="container-fluid white-text">
+					<marquee scrollamount="10"
+						><p class="text-white m-0">
+							<b><span style="color: #ff3115">New - </span> Registration is now open</b>
+						</p></marquee
+					>
+				</div>
+			</div>
+
 			<header id="header" class="">
 				<div class="container-fluid">
-			
-				  <div class="logo float-left ml-4" style="display: flex; align-items: center;">
-					<!-- Uncomment below if you prefer to use an image logo -->
-					<a href="#header"><img src="/images/logo.png" /></a>
-					<span class="d-flex">
-					<span class="mx-2" style="font-size: 22px;">JSSATE 
-				</span>
-				<span class="d-none d-md-block" class="ml-3" style="font-size: 22px;">NOIDA</span>
-				</span>
-					<!-- <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
-				  </div>
-			
-				  <nav class="main-nav float-right d-none d-lg-block">
-					<ul>
-						<li class="active"> <a href="#">Home</a></li>
-						<!-- End Home --> 
-						
-						<!--About Menu Start-->
-						<li class=""> <a href="/about">About</a></li>
-						<li> <a href="/speakers">Speakers</a></li>
-						<li> <a href="/call-for-papers">Call for papers</a></li>
-						<!--About Menu End--> 
+					<div class="logo float-left ml-4" style="display: flex; align-items: center">
+						<!-- Uncomment below if you prefer to use an image logo -->
+						<a href="#header"><img src="/images/logo.png" /></a>
+						<span class="d-flex">
+							<span class="mx-2" style="font-size: 22px">JSSATE </span>
+							<span class="d-none d-md-block" class="ml-3" style="font-size: 22px">NOIDA</span>
+						</span>
+						<!-- <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+					</div>
 
-						<!-- Drop Down Pages Start -->
-						
-						<!--Drop Down Pages End -->
-						
-						<!--Courses Menu Start-->
-						<li class="menu-item-has-children"> <a href="/publications/">Publications</a>
-						  
-						</li>
-						<li> <a href="/registration/">Registration</a></li>
-													<li> <a href="/committees">Committees</a></li>
-													<li> <a class="scrollnew" href="/#rs-partner">Sponsors</a></li>
-													<li> <a  href="/contact">Contact</a></li>
+					<nav class="main-nav float-right d-none d-lg-block">
+						<ul>
+							<li class="active"><a href="#">Home</a></li>
+							<!-- End Home -->
 
-					</ul>
-				  </nav><!-- .main-nav -->
-				  
+							<!--About Menu Start-->
+							<li class=""><a href="/about">About</a></li>
+							<li><a href="/speakers">Speakers</a></li>
+							<li><a href="/call-for-papers">Call for papers</a></li>
+							<!--About Menu End-->
+
+							<!-- Drop Down Pages Start -->
+
+							<!--Drop Down Pages End -->
+
+							<!--Courses Menu Start-->
+							<li class="menu-item-has-children"><a href="/publications/">Publications</a></li>
+							<li><a href="/registration/">Registration</a></li>
+							<li><a href="/committees">Committees</a></li>
+							<li><a class="scrollnew" href="/#rs-partner">Sponsors</a></li>
+							<li><a href="/contact">Contact</a></li>
+						</ul>
+					</nav>
+					<!-- .main-nav -->
 				</div>
-			  </header>
+			</header>
 			<!--Header End-->
-			  
+
 			<div class="container-fluid px-0">
-					
-						<div class="new-head" style="background: rgb(255, 255, 255, 0.62) !important; position: absolute; width: 100%; z-index: 999;">
-								<div class="row" style="display: flex; align-items: center;">
+				<div
+					class="new-head"
+					style="
+						background: rgb(255, 255, 255, 0.62) !important;
+						position: absolute;
+						width: 100%;
+						z-index: 999;
+					"
+				>
+					<div class="row" style="display: flex; align-items: center">
 						<div class="col-md-3 text-center py-4 d-none d-md-block">
-							<img src="/images/logo2.png" style="height: 70px;" />
+							<img src="/images/logo2.png" style="height: 70px" />
 							<!-- <img src="/images/ieee.png" class="ml-2" style="height: 75px;" /> -->
-							<Img src="/images/csi-logo.png" class="ml-2" style="height: 70px;" />
+							<img src="/images/csi-logo.png" class="ml-2" style="height: 70px" />
 						</div>
 						<div class="col-md-6 text-center">
-							<h2 class="mb-0 head-top-new" style="color: #000066;">JSS ACADEMY OF TECHNICAL EDUCATION NOIDA</h2>
-							<p class="mb-0 head-data" style="color: #000066; font-weight: bold;">
-								
-									<span style="text-shadow: 2px 2px 8px #fff;">ONLINE </span> INTERNATIONAL CONFERENCE ON INTELLIGENT CONTROL AND COMPUTATION FOR SMART ENERGY AND MECHATRONIC SYSTEMS (ICCSEMS-2020)</p>
-							<p class="mb-0 head-data" style="color: #000066;">25-26 September 2020</p>
-	
-	
+							<h2 class="mb-0 head-top-new" style="color: #000066">
+								JSS ACADEMY OF TECHNICAL EDUCATION NOIDA
+							</h2>
+							<p class="mb-0 head-data" style="color: #000066; font-weight: bold">
+								<span style="text-shadow: 2px 2px 8px #fff">ONLINE </span> INTERNATIONAL
+								CONFERENCE ON INTELLIGENT CONTROL AND COMPUTATION FOR SMART ENERGY AND
+								MECHATRONIC SYSTEMS (ICCSEMS-2020)
+							</p>
+							<p class="mb-0 head-data" style="color: #000066">25-26 September 2020</p>
 						</div>
 						<div class="col-md-3 text-center py-3 d-none d-md-block">
-								<img src="/images/aicte.png" style="height: 70px;" />
-								
-							</div>
+							<img src="/images/aicte.png" style="height: 70px" />
 						</div>
 					</div>
-				</div> 
-
+				</div>
+			</div>
 		</div>
 
-		
-        <!--Full width header End-->
-		
+		<!--Full width header End-->
+
 		<!-- Slider Area Start -->
-        <div id="rs-slider" class="slider-overlay-1">
-			    
-        	<div id="home-slider">
+		<div id="rs-slider" class="slider-overlay-1">
+			<div id="home-slider">
 				<!-- Item 1 -->
 				<div class="item active">
 					<img src="/images/NCSES-2.jpg" alt="Slide1" />
-					
 				</div>
 
 				<!-- Item 2 -->
 				<div class="item">
 					<img src="/images/old.jpg" alt="Slide2" />
-				
 				</div>
 
 				<!-- Item 3 -->
 				<div class="item">
 					<img src="/images/OP2019-1.jpg" alt="Slide3" />
-					
 				</div>
+			</div>
+		</div>
+		<!-- Slider Area End -->
 
-        	</div>         
-        </div>
-        <!-- Slider Area End -->
-		
 		<!-- Search Courses End -->
 
 		<!-- Courses Start -->
-        <div id="rs-courses-2" class="rs-courses-2 sec-spacer">
+		<div id="rs-courses-2" class="rs-courses-2 sec-spacer">
 			<div class="container">
 				<div class="sec-title mb-50">
-                    <h2>About Us</h2>      
-                	<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.</p> -->
-                	
-                </div>
-                <div class="row">
-                    <p class="text-justify px-2">The ONLINE INTERNATIONAL CONFERENCE ON INTELLIGENT CONTROL AND COMPUTATION FOR Smart Energy and Mechatronics Systems (ICCSEMS-2020) is jointly organized by Department of Computer Science & Engineering, Information Technology and Electronics and Communication Engineering.
-
-                        New trends and technologies in intelligent control and computation are leading to efficient, robust and faster systems. Our conventional homes, cities and communities are becoming smarter as we continue to layer new technology on top of and within our cities and infrastructure. Hence, we are forced to confront the complex interplay between our technology systems and our service delivery systems that make our communities attractive and welcoming to the people who live there. Smart energy systems and technologies offer promises to enhance the operational efficiency of nation-wide energy and power supplies via distributed generation. This objective is achieved by allowing intelligent monitoring and control of different components within the distribution and transmission lines as well as other systems from utilities of natural gas, thermal energy, electricity on one side to the end user on the other side, while maintaining the energy and power quality, security, reliability and safety with minimum environmental impacts. On the other hand, smart mechatronic systems are being extensively used in industrial and commercial applications to achieve high precision, reduce production and delivery costs and to increase human safety. It is expected that the conference will provide platform for sharing challenges, fields and their solutions using innovative design, systems and technologies pertaining to smart energy and mechatronic systems.</p>
+					<h2>About Us</h2>
+					<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.</p> -->
 				</div>
-				
+				<div class="row">
+					<p class="text-justify px-2">
+						The ONLINE INTERNATIONAL CONFERENCE ON INTELLIGENT CONTROL AND COMPUTATION FOR Smart
+						Energy and Mechatronics Systems (ICCSEMS-2020) is jointly organized by Department of
+						Computer Science & Engineering, Information Technology and Electronics and
+						Communication Engineering. New trends and technologies in intelligent control and
+						computation are leading to efficient, robust and faster systems. Our conventional
+						homes, cities and communities are becoming smarter as we continue to layer new
+						technology on top of and within our cities and infrastructure. Hence, we are forced to
+						confront the complex interplay between our technology systems and our service delivery
+						systems that make our communities attractive and welcoming to the people who live
+						there. Smart energy systems and technologies offer promises to enhance the operational
+						efficiency of nation-wide energy and power supplies via distributed generation. This
+						objective is achieved by allowing intelligent monitoring and control of different
+						components within the distribution and transmission lines as well as other systems
+						from utilities of natural gas, thermal energy, electricity on one side to the end user
+						on the other side, while maintaining the energy and power quality, security,
+						reliability and safety with minimum environmental impacts. On the other hand, smart
+						mechatronic systems are being extensively used in industrial and commercial
+						applications to achieve high precision, reduce production and delivery costs and to
+						increase human safety. It is expected that the conference will provide platform for
+						sharing challenges, fields and their solutions using innovative design, systems and
+						technologies pertaining to smart energy and mechatronic systems.
+					</p>
+				</div>
+
 				<div class="text-center">
 					<a href="/images/brochure.pdf" download class="btn btn-primary">Download Brochure</a>
 				</div>
-			
 			</div>
-        </div>
-        <!-- Courses End -->
-		
+		</div>
+		<!-- Courses End -->
+
 		<!-- Counter Up Section Start-->
-        <div class="rs-counter pt-100 pb-70 bg3">
-            <div class="container">
-                <div class="sec-title white-text mb-50 text-center">
-                    <h2>ACHIEVEMENTS</h2>      
-                    <!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p> -->
-                </div>
-        		<div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="rs-counter-list">
-                            <h2 class="counter-number plus">6</h2>                  
-                            <h4 class="counter-desc">SPEAKERS</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="rs-counter-list">
-                            <h2 class="counter-number plus">10</h2>
-                            <h4 class="counter-desc">COUNTRIES</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="rs-counter-list">
-                            <h2 class="counter-number plus">100</h2>                  
-                            <h4 class="counter-desc">PARTICIPANTS</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="rs-counter-list">
-                            <h2 class="counter-number plus">500</h2>
-                            <h4 class="counter-desc">Satisfied People</h4>
-                        </div>
-                    </div>
-        		</div>
-            </div>
-        </div>
-        <!-- Counter Up Section End -->
+		<div class="rs-counter pt-100 pb-70 bg3">
+			<div class="container">
+				<div class="sec-title white-text mb-50 text-center">
+					<h2>ACHIEVEMENTS</h2>
+					<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p> -->
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="rs-counter-list">
+							<h2 class="counter-number plus">6</h2>
+							<h4 class="counter-desc">SPEAKERS</h4>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="rs-counter-list">
+							<h2 class="counter-number plus">10</h2>
+							<h4 class="counter-desc">COUNTRIES</h4>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="rs-counter-list">
+							<h2 class="counter-number plus">100</h2>
+							<h4 class="counter-desc">PARTICIPANTS</h4>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="rs-counter-list">
+							<h2 class="counter-number plus">500</h2>
+							<h4 class="counter-desc">Satisfied People</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Counter Up Section End -->
 
-
-        <!-- Team Start -->
+		<!-- Team Start -->
 		<div id="rs-speakers" class="rs-team sec-color sec-spacer">
-            <div class="container">
-                <div class="sec-title mb-50">
-                    <h2>OUR Speakers</h2>      
-                	<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
-                	<div class="view-more">
-                		<!-- <a href="#">View All Staff <i class="fa fa-angle-double-right"></i></a> -->
-                	</div>
-                </div>
-				<div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="/images/krishnamoorthy.jpg" alt="Speaker"  style="height: 350px"/>
+			<div class="container">
+				<div class="sec-title mb-50">
+					<h2>OUR Speakers</h2>
+					<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
+					<div class="view-more">
+						<!-- <a href="#">View All Staff <i class="fa fa-angle-double-right"></i></a> -->
+					</div>
+				</div>
+				<div
+					class="rs-carousel owl-carousel"
+					data-loop="true"
+					data-items="3"
+					data-margin="30"
+					data-autoplay="false"
+					data-autoplay-timeout="5000"
+					data-smart-speed="1200"
+					data-dots="true"
+					data-nav="true"
+					data-nav-speed="false"
+					data-mobile-device="1"
+					data-mobile-device-nav="true"
+					data-mobile-device-dots="true"
+					data-ipad-device="2"
+					data-ipad-device-nav="true"
+					data-ipad-device-dots="true"
+					data-md-device="3"
+					data-md-device-nav="true"
+					data-md-device-dots="true"
+				>
+					<div class="team-item">
+						<div class="team-img">
+							<img src="/images/krishnamoorthy.jpg" alt="Speaker" style="height: 350px" />
 							<div class="normal-text">
 								<h3 class="team-name">Mr. Krishnamoorthy</h3>
-                                <span class="subtitle">Ex. Vice President Global Head Smart Buildings L &amp; T</span>
+								<span class="subtitle"
+									>Ex. Vice President Global Head Smart Buildings L &amp; T</span
+								>
 							</div>
-                        </div>
-                        <div class="team-content">
+						</div>
+						<div class="team-content">
 							<div class="overly-border"></div>
-                            <div class="display-table">
-                                <div class="display-table-cell">
-									<h3 class="team-name"><a href="teachers-single.html">Mr. Krishnamoorthy</a></h3>
+							<div class="display-table">
+								<div class="display-table-cell">
+									<h3 class="team-name">
+										<a href="teachers-single.html">Mr. Krishnamoorthy</a>
+									</h3>
 									<span class="team-title">Founder and CEO Navtat Solutions</span>
-                                    <!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
+									<!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
 									<div class="team-social">
-										<a href="https://www.linkedin.com/in/krishnamoorthy-raman-2b104315/" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
+										<a
+											href="https://www.linkedin.com/in/krishnamoorthy-raman-2b104315/"
+											target="_blank"
+											class="social-icon"
+											><i class="fa fa-linkedin"></i
+										></a>
 										<!-- <a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
 										<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
 										<a href="#" class="social-icon"><i class="fa fa-pinterest-p"></i></a> -->
 									</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-						<div class="team-item">
-								<div class="team-img">
-									<img src="/images/speak.jpg" alt="team Image" style="height: 350px;" />
-									<div class="normal-text">
-										<h3 class="team-name">Sundresan Perumal</h3>
-										<span class="subtitle">Universiti Sains Islam Malaysia</span>
-									</div>
 								</div>
-								<div class="team-content">
-									<div class="overly-border"></div>
-									<div class="display-table">
-										<div class="display-table-cell">
-											<h3 class="team-name"><a href="teachers-single.html">Sundresan Perumal</a></h3>
-											<span class="team-title">Universiti Sains Islam Malaysia </span>
-											<!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
-											<div class="team-social">
-												<!-- <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="team-item">
+						<div class="team-img">
+							<img src="/images/speak.jpg" alt="team Image" style="height: 350px" />
+							<div class="normal-text">
+								<h3 class="team-name">Sundresan Perumal</h3>
+								<span class="subtitle">Universiti Sains Islam Malaysia</span>
+							</div>
+						</div>
+						<div class="team-content">
+							<div class="overly-border"></div>
+							<div class="display-table">
+								<div class="display-table-cell">
+									<h3 class="team-name">
+										<a href="teachers-single.html">Sundresan Perumal</a>
+									</h3>
+									<span class="team-title">Universiti Sains Islam Malaysia </span>
+									<!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
+									<div class="team-social">
+										<!-- <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-pinterest-p"></i></a> -->
-												<a href="#" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
-											</div>
-										</div>
+										<a href="#" target="_blank" class="social-icon"
+											><i class="fa fa-linkedin"></i
+										></a>
 									</div>
 								</div>
 							</div>
-							<div class="team-item">
-								<div class="team-img">
-									<img src="/images/dummy.jpg" alt="team Image" style="height: 350px;" />
-									<div class="normal-text">
-										<h3 class="team-name">Dr. Mhd Saeed Sharif</h3>
-										<span class="subtitle">University Of East London</span>
-									</div>
-								</div>
-								<div class="team-content">
-									<div class="overly-border"></div>
-									<div class="display-table">
-										<div class="display-table-cell">
-											<h3 class="team-name"><a href="teachers-single.html">Dr. Mhd Saeed Sharif</a></h3>
-											<span class="team-title">University Of East London</span>
-											<!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
-											<div class="team-social">
-												<!-- <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="team-item">
+						<div class="team-img">
+							<img src="/images/dummy.jpg" alt="team Image" style="height: 350px" />
+							<div class="normal-text">
+								<h3 class="team-name">Dr. Mhd Saeed Sharif</h3>
+								<span class="subtitle">University Of East London</span>
+							</div>
+						</div>
+						<div class="team-content">
+							<div class="overly-border"></div>
+							<div class="display-table">
+								<div class="display-table-cell">
+									<h3 class="team-name">
+										<a href="teachers-single.html">Dr. Mhd Saeed Sharif</a>
+									</h3>
+									<span class="team-title">University Of East London</span>
+									<!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
+									<div class="team-social">
+										<!-- <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-pinterest-p"></i></a> -->
-												<a href="#" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
-											</div>
-										</div>
+										<a href="#" target="_blank" class="social-icon"
+											><i class="fa fa-linkedin"></i
+										></a>
 									</div>
 								</div>
 							</div>
-							<div class="team-item">
-								<div class="team-img">
-									<img src="/images/Daciana.jpg" alt="team Image" style="height: 350px;" />
-									<div class="normal-text">
-										<h3 class="team-name"> Iliescu, Daciana</h3>
-										<span class="subtitle">University Of Warwick</span>
-									</div>
-								</div>
-								<div class="team-content">
-									<div class="overly-border"></div>
-									<div class="display-table">
-										<div class="display-table-cell">
-											<h3 class="team-name"><a href="teachers-single.html"> Iliescu, Daciana</a></h3>
-											<span class="team-title">University Of Warwick</span>
-											<!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
-											<div class="team-social">
-												<!-- <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="team-item">
+						<div class="team-img">
+							<img src="/images/Daciana.jpg" alt="team Image" style="height: 350px" />
+							<div class="normal-text">
+								<h3 class="team-name">Iliescu, Daciana</h3>
+								<span class="subtitle">University Of Warwick</span>
+							</div>
+						</div>
+						<div class="team-content">
+							<div class="overly-border"></div>
+							<div class="display-table">
+								<div class="display-table-cell">
+									<h3 class="team-name">
+										<a href="teachers-single.html"> Iliescu, Daciana</a>
+									</h3>
+									<span class="team-title">University Of Warwick</span>
+									<!-- <p class="team-desc">Entrusted with planning, implementation and evaluation.</p> -->
+									<div class="team-social">
+										<!-- <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
 												<a href="#" class="social-icon"><i class="fa fa-pinterest-p"></i></a> -->
-												<a href="https://www.linkedin.com/in/daciana-iliescu-1189327/?originalSubdomain=uk" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
-											</div>
-										</div>
+										<a
+											href="https://www.linkedin.com/in/daciana-iliescu-1189327/?originalSubdomain=uk"
+											target="_blank"
+											class="social-icon"
+											><i class="fa fa-linkedin"></i
+										></a>
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Team End -->
-		
 
 		<div id="rs-publications" class="rs-pricing pt-70 pb-70">
 			<div class="container">
 				<div class="sec-title mb-50">
-                    <h2>Publications</h2>      
-                	<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
-                </div>
-				<div class=" row">
+					<h2>Publications</h2>
+					<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
+				</div>
+				<div class="row">
 					<div class="col-md-8">
-						<h4>Extended version of selected papers presented in the conference will be invited for review
-							and potential papers will be published in:</h4>
-						<ul style="margin-left: 20px; margin-bottom: 10px; list-style: square;">
-							<li><b>International Journal of Energy Technology and Policy (Scopus Indexed)</b>, ICCSEMS-2020: Special Issue on: "Artificial Intelligence, Signal Processing and Mechatronics for Smart Energy Systems" <a href="https://www.inderscience.com/info/ingeneral/cfp.php?id=5068" target="_blank">https://www.inderscience.com/info/ingeneral/cfp.php?id=5068</a>
+						<h4>
+							Extended version of selected papers presented in the conference will be invited
+							for review and potential papers will be published in:
+						</h4>
+						<ul style="margin-left: 20px; margin-bottom: 10px; list-style: square">
+							<li>
+								<b>International Journal of Energy Technology and Policy (Scopus Indexed)</b>,
+								ICCSEMS-2020: Special Issue on: "Artificial Intelligence, Signal Processing
+								and Mechatronics for Smart Energy Systems"
+								<a
+									href="https://www.inderscience.com/info/ingeneral/cfp.php?id=5068"
+									target="_blank"
+									>https://www.inderscience.com/info/ingeneral/cfp.php?id=5068</a
+								>
 							</li>
-							<li><b>BJIT - International Journal of Information Technology </b>, Published by Springer Nature
-								under ISSN: 2511-2104 (Print Version); ISSN: 2511-2112 (Electronic Version) having
-								Springer Journal No.: 41870.
+							<li>
+								<b>BJIT - International Journal of Information Technology </b>, Published by
+								Springer Nature under ISSN: 2511-2104 (Print Version); ISSN: 2511-2112
+								(Electronic Version) having Springer Journal No.: 41870.
 							</li>
-							<li><b>International Journal of Spatio-temporal Data Science </b>, Inderscience ISSN: 2399-1275
-								(Print Version); ISSN: 2399-1283 (Electronic Version)
+							<li>
+								<b>International Journal of Spatio-temporal Data Science </b>, Inderscience
+								ISSN: 2399-1275 (Print Version); ISSN: 2399-1283 (Electronic Version)
 							</li>
-							<li><b>International Journal of Emerging Computing for Sustainable Agriculture </b>, Inderscience
-								ISSN: 2631-8881 (Print Version); ISSN: 2631-889X (Electronic Version)
+							<li>
+								<b>International Journal of Emerging Computing for Sustainable Agriculture </b
+								>, Inderscience ISSN: 2631-8881 (Print Version); ISSN: 2631-889X (Electronic
+								Version)
 							</li>
-							
 						</ul>
 					</div>
-					<div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
-						<img src="../images/submit.png" style="width: 75%;" />
+					<div class="col-md-4" style="display: flex; justify-content: center; align-items: center">
+						<img src="../images/submit.png" style="width: 75%" />
 					</div>
 				</div>
 			</div>
-        </div>
+		</div>
 
-     
-
-        <!-- Pricing Plan Start -->
-        <div id="rs-pricing" class="rs-pricing pt-100 pb-70">
+		<!-- Pricing Plan Start -->
+		<div id="rs-pricing" class="rs-pricing pt-100 pb-70">
 			<div class="container">
 				<div class="sec-title mb-50">
-                    <h2>Registration Details</h2>      
-                	<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
-                </div>
+					<h2>Registration Details</h2>
+					<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
+				</div>
 				<div class="row">
-			        <div class="col-md-12" style="overflow-x: auto">
-						<table class="table table-bordered" >
+					<div class="col-md-12" style="overflow-x: auto">
+						<table class="table table-bordered">
 							<thead>
-							  <tr style="text-align: center;">
-								<th  style="border-bottom: 0px;"> </th>
-								<th >Indian Authors(INR)</th>
-								<th >Foreign Authors (USD) </th>
-							  </tr>
+								<tr style="text-align: center">
+									<th style="border-bottom: 0px"></th>
+									<th>Indian Authors(INR)</th>
+									<th>Foreign Authors (USD)</th>
+								</tr>
 							</thead>
 							<tbody>
-							  
-							  <tr style="text-align: center;">
-								  <td style="font-weight: bold;">Early Bird (before 20 Aug 2020)</td>
+								<tr style="text-align: center">
+									<td style="font-weight: bold">Early Bird (before 20 Aug 2020)</td>
 									<td>500</td>
-										
-										<td>50</td>
-										
-										
-										
-								
-							  </tr>
-							  <tr style="text-align: center;">
-								<td style="font-weight: bold;"> Registration after 20 Aug 2020</td>
-								<td>1000</td>
-								
-								<td>60</td>
-								
-								
-								
-							  </tr>
-							  
-								  
-									 
-							</tbody>
-						  </table>
-					</div>
-			    </div>
-			</div>
-        </div>
-        <!-- Pricing Plan End -->
 
- 
-  
+									<td>50</td>
+								</tr>
+								<tr style="text-align: center">
+									<td style="font-weight: bold">Registration after 20 Aug 2020</td>
+									<td>1000</td>
+
+									<td>60</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Pricing Plan End -->
 
 		<!-- Testimonial Start -->
-        <div id="rs-testimonial-2" class="rs-testimonial-2 sec-color pt-100 pb-70 sec-color">
+		<div id="rs-testimonial-2" class="rs-testimonial-2 sec-color pt-100 pb-70 sec-color">
 			<div class="container">
 				<div class="sec-title mb-50">
-					<h2>WHAT PEOPLE SAY</h2>      
+					<h2>WHAT PEOPLE SAY</h2>
 					<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p> -->
 				</div>
 				<div class="row">
-			        <div class="col-md-12">
-						<div  class="rs-carousel owl-carousel" data-loop="true" data-items="2" data-margin="30" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="false" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="false" data-md-device="2" data-md-device-nav="true" data-md-device-dots="false">
-			                <div class="testimonial-item">
-			                    <div class="testi-img">
-			                        <img src="../images/Suresh1.jpg" alt="Suresh">
-			                    </div>
-			                    <div class="testi-desc">
-			                        <h4 class="testi-name">Suresh Sundaram (SCE NTU Singapore)</h4>
-			                        <p>
-			                            I must congratulate all of you for a such meticulously planned and staged conference showcasing not only good work on cognitive information processing but also exposing  Indian culture which I much enjoyed.
-			                        </p>
-			                    </div>
-			                </div>
-					       
-					        <div class="testimonial-item">
-					            <div class="testi-img">
-					                <img src="../images/vimla.jpeg" alt="Vimla Patel">
-					            </div>
-					            <div class="testi-desc">
-					                <h4 class="testi-name">Vimla L Patel (Senior Research Scientist, NYAC)</h4>
-					                <p>
-										I have very fond memories of this special event. It was very well organized and I met wondeful people. My best wishes for everyone. Thanks for inviting me!
-										
+					<div class="col-md-12">
+						<div
+							class="rs-carousel owl-carousel"
+							data-loop="true"
+							data-items="2"
+							data-margin="30"
+							data-autoplay="true"
+							data-autoplay-timeout="5000"
+							data-smart-speed="1200"
+							data-dots="false"
+							data-nav="true"
+							data-nav-speed="false"
+							data-mobile-device="1"
+							data-mobile-device-nav="true"
+							data-mobile-device-dots="false"
+							data-ipad-device="2"
+							data-ipad-device-nav="true"
+							data-ipad-device-dots="false"
+							data-md-device="2"
+							data-md-device-nav="true"
+							data-md-device-dots="false"
+						>
+							<div class="testimonial-item">
+								<div class="testi-img">
+									<img src="../images/Suresh1.jpg" alt="Suresh" />
+								</div>
+								<div class="testi-desc">
+									<h4 class="testi-name">Suresh Sundaram (SCE NTU Singapore)</h4>
+									<p>
+										I must congratulate all of you for a such meticulously planned and
+										staged conference showcasing not only good work on cognitive
+										information processing but also exposing Indian culture which I much
+										enjoyed.
 									</p>
-									
-					            </div>
+								</div>
+							</div>
+
+							<div class="testimonial-item">
+								<div class="testi-img">
+									<img src="../images/vimla.jpeg" alt="Vimla Patel" />
+								</div>
+								<div class="testi-desc">
+									<h4 class="testi-name">
+										Vimla L Patel (Senior Research Scientist, NYAC)
+									</h4>
+									<p>
+										I have very fond memories of this special event. It was very well
+										organized and I met wondeful people. My best wishes for everyone.
+										Thanks for inviting me!
+									</p>
+								</div>
 							</div>
 							<div class="testimonial-item">
-					            <div class="testi-img">
-					                <img src="../images/risto.jpg" alt="Jhon Smith">
-					            </div>
-					            <div class="testi-desc">
-					                <h4 class="testi-name">Risto Ilmoniemi (Aalto University School of Science, Finland)</h4>
-					                <p>
-					                    Thank You  so much to JSS Academy for organizing CCIP 2015. So many comments on how fantastic your conference is!!
-					                </p>
-					            </div>
-							</div>
-					        <div class="testimonial-item">
-					            <div class="testi-img">
-					                <img src="../images/nanda.jpg" alt="Jhon Smith">
-					            </div>
-					            <div class="testi-desc">
-					                <h4 class="testi-name">Nanda Nandagopal (University of South Australia)</h4>
-					                <p>
-					                    I want to thank you all immensely for inviitng me to CCIP 2015. I thoroughly enjoyed being at JSS Academy and rubbing shoulder with you all present. Well done !!
-					                </p>
-					            </div>
+								<div class="testi-img">
+									<img src="../images/risto.jpg" alt="Jhon Smith" />
+								</div>
+								<div class="testi-desc">
+									<h4 class="testi-name">
+										Risto Ilmoniemi (Aalto University School of Science, Finland)
+									</h4>
+									<p>
+										Thank You so much to JSS Academy for organizing CCIP 2015. So many
+										comments on how fantastic your conference is!!
+									</p>
+								</div>
 							</div>
 							<div class="testimonial-item">
-					            <div class="testi-img">
-					                <img src="../images/citations.jpeg" alt="Sundararajan">
-					            </div>
-					            <div class="testi-desc">
-					                <h4 class="testi-name">Sundararajan N (Retd. Proff NTU Singapore)</h4>
-					                <p>
-										Well planned and organized conference. Hope to see you all again!! Thank you for inviting me  to CCIP 2015.
-										<p>&nbsp;</p>
-					                </p>
-					            </div>
-					        </div>
-					        
-			            </div>
-			        </div>
-			    </div>
+								<div class="testi-img">
+									<img src="../images/nanda.jpg" alt="Jhon Smith" />
+								</div>
+								<div class="testi-desc">
+									<h4 class="testi-name">
+										Nanda Nandagopal (University of South Australia)
+									</h4>
+									<p>
+										I want to thank you all immensely for inviitng me to CCIP 2015. I
+										thoroughly enjoyed being at JSS Academy and rubbing shoulder with you
+										all present. Well done !!
+									</p>
+								</div>
+							</div>
+							<div class="testimonial-item">
+								<div class="testi-img">
+									<img src="../images/citations.jpeg" alt="Sundararajan" />
+								</div>
+								<div class="testi-desc">
+									<h4 class="testi-name">Sundararajan N (Retd. Proff NTU Singapore)</h4>
+									<p>
+										Well planned and organized conference. Hope to see you all again!!
+										Thank you for inviting me to CCIP 2015. &nbsp;
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-        </div>
-        <!-- Testimonial End -->
-		
-        <!-- Partner Start -->
-        <!-- <div id="rs-partner" class="rs-partner pt-70 pb-70">
+		</div>
+		<!-- Testimonial End -->
+
+		<!-- Partner Start -->
+		<!-- <div id="rs-partner" class="rs-partner pt-70 pb-70">
             <div class="container">
                     <div class="sec-title mb-50">
                             <h2>Our Sponsors</h2>      
@@ -541,55 +707,127 @@
 		<!-- Partner End -->
 
 		<!-- PLaces to visit start-->
-		
+
 		<div id="rs-places" class="rs-team sec-color sec-spacer mb-5">
-				<div class="container">
-					<div class="sec-title mb-50">
-						<h2>Delhi Tourism Place</h2>      
-						<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
-						<div class="view-more">
-							<!-- <a href="#">View All Staff <i class="fa fa-angle-double-right"></i></a> -->
+			<div class="container">
+				<div class="sec-title mb-50">
+					<h2>Delhi Tourism Place</h2>
+					<!-- <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.</p> -->
+					<div class="view-more">
+						<!-- <a href="#">View All Staff <i class="fa fa-angle-double-right"></i></a> -->
+					</div>
+				</div>
+				<div
+					class="rs-carousel owl-carousel"
+					data-loop="true"
+					data-items="3"
+					data-margin="30"
+					data-autoplay="true"
+					data-autoplay-timeout="5000"
+					data-smart-speed="1200"
+					data-dots="true"
+					data-nav="true"
+					data-nav-speed="false"
+					data-mobile-device="1"
+					data-mobile-device-nav="true"
+					data-mobile-device-dots="true"
+					data-ipad-device="2"
+					data-ipad-device-nav="true"
+					data-ipad-device-dots="true"
+					data-md-device="3"
+					data-md-device-nav="true"
+					data-md-device-dots="true"
+				>
+					<div class="card">
+						<img
+							class="card-img-top"
+							src="images/redfort.jpg"
+							alt="RedFort"
+							style="width: 100%; height: 250px"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Red Fort</h4>
+							<p class="card-text">
+								The Red Fort is a historic fort in the city of Delhi in India, which served as
+								the main residence of the Mughal Emperors
+							</p>
+							<a
+								href="http://delhitourism.gov.in/delhitourism/tourist_place/red_fort.jsp"
+								class="btn btn-primary"
+								target="_blank"
+								>See More</a
+							>
 						</div>
 					</div>
-					<div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
-							<div class="card">
-									<img class="card-img-top" src="images/redfort.jpg" alt="RedFort" style="width:100%; height: 250px;">
-									<div class="card-body">
-									  <h4 class="card-title">Red Fort</h4>
-									  <p class="card-text">The Red Fort is a historic fort in the city of Delhi in India, which served as the main residence of the Mughal Emperors</p>
-									  <a href="http://delhitourism.gov.in/delhitourism/tourist_place/red_fort.jsp" class="btn btn-primary" target="_blank">See More</a>
-									</div>
-								  </div>
-						<div class="card">
-								<img class="card-img-top" src="images/indiagate.jpg" alt="India Gate" style="width:100%; height: 250px;">
-								<div class="card-body">
-								  <h4 class="card-title">India Gate</h4>
-								  <p class="card-text">The India Gate  is a war memorial located astride the Rajpath, on the eastern edge of the "ceremonial axis" of New Delhi</p>
-								  <a href="http://delhitourism.gov.in/delhitourism/tourist_place/india_gate.jsp" class="btn btn-primary" target="_blank">See More</a>
-								</div>
-							  </div>
-							<div class="card">
-									<img class="card-img-top" src="images/lotus.jpg" alt="Lotus temple" style="width:100%; height: 250px;">
-									<div class="card-body">
-									  <h4 class="card-title">Lotus Temple</h4>
-									  <p class="card-text">The Lotus Temple, located in Delhi, India, is a Bahá'í House of Worship that was dedicated in December 1986.</p>
-									  <a href="http://delhitourism.gov.in/delhitourism/tourist_place/bahai_temple.jsp" class="btn btn-primary" target="_blank">See More</a>
-									</div>
-								  </div>
-								  <div class="card">
-										<img class="card-img-top" src="images/jamamasjid.jpg" alt="Jama Masjid" style="width:100%; height: 250px;">
-										<div class="card-body">
-										  <h4 class="card-title">Jama Masjid</h4>
-										  <p class="card-text">The Masjid e Jahan Numa (lit. the 'World-reflecting Mosque'), commonly known as the Jama Masjid of Delhi.</p>
-										  <a href="http://delhitourism.gov.in/delhitourism/tourist_place/jama_masjid.jsp" target="_blank" class="btn btn-primary">See More</a>
-										</div>
-									  </div>
+					<div class="card">
+						<img
+							class="card-img-top"
+							src="images/indiagate.jpg"
+							alt="India Gate"
+							style="width: 100%; height: 250px"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">India Gate</h4>
+							<p class="card-text">
+								The India Gate is a war memorial located astride the Rajpath, on the eastern
+								edge of the "ceremonial axis" of New Delhi
+							</p>
+							<a
+								href="http://delhitourism.gov.in/delhitourism/tourist_place/india_gate.jsp"
+								class="btn btn-primary"
+								target="_blank"
+								>See More</a
+							>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							class="card-img-top"
+							src="images/lotus.jpg"
+							alt="Lotus temple"
+							style="width: 100%; height: 250px"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Lotus Temple</h4>
+							<p class="card-text">
+								The Lotus Temple, located in Delhi, India, is a Bahá'í House of Worship that
+								was dedicated in December 1986.
+							</p>
+							<a
+								href="http://delhitourism.gov.in/delhitourism/tourist_place/bahai_temple.jsp"
+								class="btn btn-primary"
+								target="_blank"
+								>See More</a
+							>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							class="card-img-top"
+							src="images/jamamasjid.jpg"
+							alt="Jama Masjid"
+							style="width: 100%; height: 250px"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Jama Masjid</h4>
+							<p class="card-text">
+								The Masjid e Jahan Numa (lit. the 'World-reflecting Mosque'), commonly known
+								as the Jama Masjid of Delhi.
+							</p>
+							<a
+								href="http://delhitourism.gov.in/delhitourism/tourist_place/jama_masjid.jsp"
+								target="_blank"
+								class="btn btn-primary"
+								>See More</a
+							>
+						</div>
 					</div>
 				</div>
 			</div>
-       
-        <!-- Footer Start -->
-        <footer id="rs-footer" class="bg3 rs-footer">
+		</div>
+
+		<!-- Footer Start -->
+		<footer id="rs-footer" class="bg3 rs-footer">
 			<div class="container">
 				<!-- Footer Address -->
 				<div>
@@ -598,9 +836,7 @@
 							<div class="contact-inner">
 								<i class="fa fa-map-marker"></i>
 								<h4 class="contact-title">Address</h4>
-								<p class="contact-desc">
-									C-20/1, Sector-62, NOIDA <br/>(U.P)-201301
-								</p>
+								<p class="contact-desc">C-20/1, Sector-62, NOIDA <br />(U.P)-201301</p>
 							</div>
 						</div>
 						<div class="col-md-4">
@@ -608,134 +844,171 @@
 								<i class="fa fa-phone"></i>
 								<h4 class="contact-title">Contact Person</h4>
 								<span>Dr. Vikram Bali: 9891372928</span>
-								<br/>
+								<br />
 								<span>Dr. Seema Shukla: 9811026442</span>
 							</div>
 						</div>
-					<div class="col-md-4">
-						<div class="contact-inner">
-							<i class="fa fa-map-marker"></i>
-							<h4 class="contact-title">Email Address</h4>
-							<p class="contact-desc">
-								internationalconferrence@jssaten.ac.in
-							</p>
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-map-marker"></i>
+								<h4 class="contact-title">Email Address</h4>
+								<p class="contact-desc">internationalconferrence@jssaten.ac.in</p>
+							</div>
 						</div>
 					</div>
-					</div>					
 				</div>
 			</div>
-			
+
 			<!-- Footer Top -->
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                     
-							<div class="col-lg-4 col-md-12">
-									<h5 class="footer-title">RECENT NEWS</h5>
-									<div class="recent-post-widget">
-										<div class="post-item">
-											<div class="post-date">
-												<span><strike>15</strike> 24</span>
-												<span>July</span>
-											</div>
-											<div class="post-desc">
-												<h5 class="post-title"><a href="#">Submission of full papers</a></h5>
-											</div>
-										</div>
-										<div class="post-item">
-											<div class="post-date">
-												<span>31</span>
-												<span>July</span>
-											</div>
-											<div class="post-desc">
-												<h5 class="post-title"><a href="#">Notification of acceptance of paper with comments</a></h5>
-												
-											</div>
-										</div>
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-12">
+							<h5 class="footer-title">RECENT NEWS</h5>
+							<div class="recent-post-widget">
+								<div class="post-item">
+									<div class="post-date">
+										<span><strike>15</strike> 24</span>
+										<span>July</span>
+									</div>
+									<div class="post-desc">
+										<h5 class="post-title"><a href="#">Submission of full papers</a></h5>
 									</div>
 								</div>
-                        <div class="col-lg-4 col-md-12">
-                            <h5 class="footer-title">OUR SITEMAP</h5>
-                            <ul class="sitemap-widget">
-                                <li class="active"><a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
-                                <li ><a href="/about"><i class="fa fa-angle-right" aria-hidden="true"></i>About Us</a></li>
-                                <li><a href="/call-for-papers/"><i class="fa fa-angle-right" aria-hidden="true"></i>Call for papers</a></li>
-                                <li><a href="/publications/"><i class="fa fa-angle-right" aria-hidden="true"></i>Publications</a></li>
-                                <li><a href="/registration/"><i class="fa fa-angle-right" aria-hidden="true"></i>Registration</a></li>
-                                <li><a href="/committees/"><i class="fa fa-angle-right" aria-hidden="true"></i>Committees</a></li>                                
-                                <!-- <li><a href="blog.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sponsors</a></li> -->
-                                
-                                
-                                <li><a href="/contact/"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a></li>
-                                
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-12">
-                            <h5 class="footer-title">NEWSLETTER</h5>
-                            <p>Sign Up to Our Newsletter to Get Latest Updates &amp; Services</p>
-                            <form class="news-form">
-                                <input type="text" class="form-input" placeholder="Enter Your Email">
-                                <button type="submit" class="form-button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="footer-share">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>    
-                        </ul>
-                    </div>                                
-                </div>
-            </div>
+								<div class="post-item">
+									<div class="post-date">
+										<span>31</span>
+										<span>July</span>
+									</div>
+									<div class="post-desc">
+										<h5 class="post-title">
+											<a href="#">Notification of acceptance of paper with comments</a>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12">
+							<h5 class="footer-title">OUR SITEMAP</h5>
+							<ul class="sitemap-widget">
+								<li class="active">
+									<a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a>
+								</li>
+								<li>
+									<a href="/about"
+										><i class="fa fa-angle-right" aria-hidden="true"></i>About Us</a
+									>
+								</li>
+								<li>
+									<a href="/call-for-papers/"
+										><i class="fa fa-angle-right" aria-hidden="true"></i>Call for
+										papers</a
+									>
+								</li>
+								<li>
+									<a href="/publications/"
+										><i class="fa fa-angle-right" aria-hidden="true"></i>Publications</a
+									>
+								</li>
+								<li>
+									<a href="/registration/"
+										><i class="fa fa-angle-right" aria-hidden="true"></i>Registration</a
+									>
+								</li>
+								<li>
+									<a href="/committees/"
+										><i class="fa fa-angle-right" aria-hidden="true"></i>Committees</a
+									>
+								</li>
+								<!-- <li><a href="blog.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sponsors</a></li> -->
 
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="copyright">
-                        <p>© <a href="#"> ICCSEMS - 2020</a>. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer End -->
+								<li>
+									<a href="/contact/"
+										><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<h5 class="footer-title">NEWSLETTER</h5>
+							<p>Sign Up to Our Newsletter to Get Latest Updates &amp; Services</p>
+							<form class="news-form">
+								<input type="text" class="form-input" placeholder="Enter Your Email" />
+								<button type="submit" class="form-button">
+									<i class="fa fa-arrow-right" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="footer-share">
+						<ul>
+							<li>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-pinterest-p"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-vimeo"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-        <!-- start scrollUp  -->
-        <div id="scrollUp">
-            <i class="fa fa-angle-up"></i>
-        </div>
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="copyright">
+						<p>© <a href="#"> ICCSEMS - 2020</a>. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
 
+		<!-- start scrollUp  -->
+		<div id="scrollUp">
+			<i class="fa fa-angle-up"></i>
+		</div>
 
-        
-
-        <!-- modernizr js -->
-        <script src="js/modernizr-2.8.3.min.js"></script>
-        <!-- jquery latest version -->
-        <script src="js/jquery.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
+		<!-- modernizr js -->
+		<script src="js/modernizr-2.8.3.min.js"></script>
+		<!-- jquery latest version -->
+		<script src="js/jquery.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+		<script src="js/owl.carousel.min.js"></script>
 		<!-- slick.min js -->
-        <script src="js/slick.min.js"></script>
-        <!-- isotope.pkgd.min js -->
-        <script src="js/isotope.pkgd.min.js"></script>
-        <!-- imagesloaded.pkgd.min js -->
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- counter top js -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <!-- magnific popup -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- rsmenu js -->
-        <script src="js/rsmenu-main.js"></script>
-        <!-- plugins js -->
-        <script src="js/plugins.js"></script>
-        <!-- main js -->
-        <script src="js/main.js"></script>
-    </body>
+		<script src="js/slick.min.js"></script>
+		<!-- isotope.pkgd.min js -->
+		<script src="js/isotope.pkgd.min.js"></script>
+		<!-- imagesloaded.pkgd.min js -->
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<!-- wow js -->
+		<script src="js/wow.min.js"></script>
+		<!-- counter top js -->
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- magnific popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- rsmenu js -->
+		<script src="js/rsmenu-main.js"></script>
+		<!-- plugins js -->
+		<script src="js/plugins.js"></script>
+		<!-- main js -->
+		<script src="js/main.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#myModal").modal("show");
+			});
+		</script>
+	</body>
 </html>
